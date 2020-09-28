@@ -1,0 +1,89 @@
+html,
+body,
+#root,
+.bg,
+canvas {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+    width: 100%;
+  }
+  50% {
+    background-color: white;
+    width: 100%;
+  }
+  100% {
+    background-color: red;
+    width: 100%;
+  }
+}
+
+.bg {
+  position: absolute;
+  animation-name: example;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+h1 {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+  font-size: 5em;
+  transform: translate3d(-50%, 0, 0);
+  margin: 0;
+  color: peru;
+  line-height: 0.8em;
+  letter-spacing: -10px;
+  text-align: center;
+}
+
+h1 > span {
+  white-space: pre;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: inherit;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  color: white;
+  bottom: 5%;
+  width: 100%;
+  line-height: 0.7em;
+}
+
+#extra {
+  font-size: 8px;
+}
+
+#info {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  color: inherit;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  color: white;
+  width: 100%;
+  bottom: 1%;
+  justify-items: stretch;
+  line-height: 0.7em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
